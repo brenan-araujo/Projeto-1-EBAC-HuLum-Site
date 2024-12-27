@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#F9B233;
+    font-family: "Passion One", serif;
+    font-style: normal;
+    box-shadow: 0px 4px 6px rgba(0,0,0, 0.2);
+}
+
+header nav div h1 img{
+    height: 64px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+
+header nav li a:hover{
+    color: #724203;
+}
+
+.Signin a{
+    padding: 8px 12px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.Signin a:hover{
+    color: #000;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.Signup a{
+    padding: 8px 12px;
+    background-color: #000;
+    border: 2px solid #000;
+    color: #F9B233;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.Signup a:hover{
+    color: #F9B233;
+    background-color: rgba(0,0,0,0.9);
+    border: 2px solid rgba(0,0,0, 0.1);
+}
+
+.hero {
+    height: 100vh; /* Altura da tela inteira */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                url('./Image/pexels-marcelochagas-1876279.jpg'); /* Substitua pelo caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    display: flex; /* Centraliza o conteúdo interno */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+    overflow: hidden; /* Garante que nada "vaze" da área */
+    filter: grayscale(50%) brightness(0.9); /* Filtros para estilização */
+}
+
+/* Estilo e animação do texto */
+.hero-text h1 {
+    font-size: 3rem; /* Tamanho do texto */
+    font-family: 'Passion One', cursive; /* Fonte personalizada */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-100px); /* Posiciona acima do centro */
+    animation: slideDown 2s ease-out forwards; /* Animação de descida */
+}
+
+/* Define a animação de descida */
+@keyframes slideDown {
+    to {
+        opacity: 1; /* Faz o texto aparecer */
+        transform: translateY(0); /* Posiciona no centro */
+    }
+}
