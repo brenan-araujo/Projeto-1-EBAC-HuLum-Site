@@ -4,16 +4,33 @@
     box-sizing: border-box;
 }
 
-header{
-    background-color:#F9B233;
+body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.container{
     font-family: "Passion One", serif;
-    font-style: normal;
-    box-shadow: 0px 4px 6px rgba(0,0,0, 0.2);
+    font-style:initial;
+}
+
+header{
+    background: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    font-family: "Passion One", serif;
+    font-style:initial;
+    overflow: hidden;
 }
 
 header nav div h1 img{
-    height: 64px;
+    height: 58px;
     margin-top: 3px;
+    padding: 9px;
     cursor: pointer;
 }
 
@@ -36,73 +53,142 @@ header .container{
 }
 
 header nav li a{
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: normal;
     transition: 0.3s ease;
 }
 
 header nav li a:hover{
-    color: #724203;
+    color: #97FEED;
 }
 
 .Signin a{
     padding: 8px 12px;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     transition: background-color 0.3s;
 }
 
 .Signin a:hover{
-    color: #000;
+    color: #97FEED;
+    border: 2px solid #97FEED;
     background-color: rgba(0,0,0, 0.2);
 }
 
 .Signup a{
     padding: 8px 12px;
-    background-color: #000;
-    border: 2px solid #000;
-    color: #F9B233;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #0D666B;
     border-radius: 8px;
     transition: background-color 0.3s;
 }
 
 .Signup a:hover{
-    color: #F9B233;
-    background-color: rgba(0,0,0,0.9);
-    border: 2px solid rgba(0,0,0, 0.1);
+    color: #0D666B;
+    background-color: #97FEED ;
+    border: 2px solid #97FEED ;
 }
 
 .hero {
-    height: 100vh; /* Altura da tela inteira */
+    height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
-                url('./Image/pexels-marcelochagas-1876279.jpg'); /* Substitua pelo caminho da imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    display: flex; /* Centraliza o conteúdo interno */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+                url('./Image/pexels-marcelochagas-1876279.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     position: relative;
-    overflow: hidden; /* Garante que nada "vaze" da área */
-    filter: grayscale(50%) brightness(0.9); /* Filtros para estilização */
+    overflow: hidden;
+    filter: grayscale(10%) brightness(0.9);
+    padding-top: 80px;
+
+
 }
 
-/* Estilo e animação do texto */
 .hero-text h1 {
-    font-size: 3rem; /* Tamanho do texto */
-    font-family: 'Passion One', cursive; /* Fonte personalizada */
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
-    opacity: 0; /* Começa invisível */
-    transform: translateY(-100px); /* Posiciona acima do centro */
-    animation: slideDown 2s ease-out forwards; /* Animação de descida */
+    margin-left: 40px;
+    font-size: 5rem;
+    font-family: 'Passion One', cursive;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transform: translateY(-150px);
+    animation: slideDown 2s ease-out forwards;
 }
 
-/* Define a animação de descida */
 @keyframes slideDown {
     to {
-        opacity: 1; /* Faz o texto aparecer */
-        transform: translateY(0); /* Posiciona no centro */
+        opacity: 1;
+        transform: translateY(-75px);
     }
+}
+
+section .container h1{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    font-size: 34px;
+    color: #0D666B;
+}
+
+.plans-cards {
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+    gap: 20px;
+    
+}
+
+.plan-card a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding-bottom: 6px;
+}
+
+.plan-card {
+    background-color:  #0D666B;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    width: 280px;
+}
+
+.plan-card .freetest{
+    color:  #0D666B;
+    background-color: #60beaf;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color, color, 0.5s ease;
+    font-size: 18px;
+}
+
+.plan-card .textplans p{
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.plan-card .freetest:hover{
+    color:  #cfd1dd;
+    background-color: #153763;
+    padding: px;
+    border-radius: 5px;
+}
+
+.plan-card .textplans .price{
+    font-size: 12px;
+    text-align: center;
+}
+
+#PremiumSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
