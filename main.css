@@ -60,7 +60,7 @@ header .container{
     margin: 0 auto;
 }
 
-header nav li a{
+header a{
     color: #ffffff;
     text-decoration: none;
     font-weight: normal;
@@ -209,18 +209,23 @@ section .container h1, h2{
 }
 
 #SuportSection h1 {
-    color: #fff;
+    color: #ffffff;
+}
+
+#SuportSection h3{
+    color: #ffffff;
+    text-align: center;
 }
 
 .social-links {
-    display: flex; /* Ativa o flexbox */
-    flex-direction: row; /* Garante que os itens fiquem lado a lado */
-    align-items: center; /* Centraliza os itens verticalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente dentro do contêiner */
-    gap: 16px; /* Define o espaçamento entre os ícones */
-    margin: 0; /* Remove margens extras */
-    padding: 0; /* Remove padding extra */
-    list-style: none; /* Remove os marcadores de lista */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .social-links img{
