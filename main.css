@@ -371,10 +371,16 @@ form button{
     padding: 8px;
     border-radius: 5px;
     border: none;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 form textarea{
     resize: none;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 form button{
